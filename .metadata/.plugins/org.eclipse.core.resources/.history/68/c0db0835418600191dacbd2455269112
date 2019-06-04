@@ -1,0 +1,13 @@
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Test;
+
+public class TitleCheck {
+	public WebDriver driver;
+	public String baseUrl = "http://demo.guru99.com/test/";
+	@Test
+	public void titlecheck() {
+		System.setProperty("webdriver.chrome.driver", "C:\\bhanu\\chromedriver.exe");
+		driver.manage().window().maximize();
+		System.out.println(driver.getTitle());
+	}
+}

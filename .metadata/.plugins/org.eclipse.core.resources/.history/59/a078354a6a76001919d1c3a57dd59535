@@ -1,0 +1,27 @@
+package selenium.basics;
+
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+
+public class GoogleSearch {
+	@Test
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.gecko.driver", "C:\\bhanu\\geckodriver.exe");
+		WebDriver driver = new FirefoxDriver();
+		driver.manage().window().maximize();
+		driver.get("http://www.pinterest.ca");
+		driver.findElement(By.id("email")).sendKeys("bhanu2641654@gmail.com");
+		driver.findElement(By.id("password")).sendKeys("bhanugjhnfgj");
+		driver.findElement(By.id("age")).sendKeys("23");
+		driver.findElement(By.xpath("//div[contains(text(),'Continue')]")).click();
+
+		
+		
+	}
+
+}

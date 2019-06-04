@@ -1,0 +1,24 @@
+package selenium.basics;
+
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class commonMeathods {
+	@Test
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver", "C:\\bhanu\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://linkedin.com");
+		Thread.sleep(50000);
+		driver.navigate().to("https://www.scribd.com/");
+		driver.navigate().refresh();
+		driver.navigate().back();
+		driver.navigate().forward();
+		driver.navigate().to("http://popuptest.com/popuptest1.html");
+		driver.close();
+		driver.quit();
+}
+}

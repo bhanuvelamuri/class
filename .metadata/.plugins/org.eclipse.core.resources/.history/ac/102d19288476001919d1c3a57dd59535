@@ -1,0 +1,17 @@
+package selenium.basics;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class linkedinLogin {
+	System.setProperty("webdriver.gecko.driver", "C:\\bhanu\\geckodriver.exe");
+	WebDriver driver = new FirefoxDriver();
+	driver.manage().window().maximize();
+	driver.get("http://www.pinterest.ca");
+	driver.findElement(By.id("email")).sendKeys("bhanu2641654uii@gmail.com");
+	driver.findElement(By.id("password")).sendKeys("bhanugjhnfgj");
+	driver.findElement(By.id("age")).sendKeys("23");
+	driver.findElement(By.xpath("//div[contains(text(),'Continue')]")).click();
+
+}

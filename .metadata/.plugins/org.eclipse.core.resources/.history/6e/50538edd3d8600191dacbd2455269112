@@ -1,0 +1,76 @@
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+public class basics {
+	@BeforeTest
+	public void frames() throws InterruptedException {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver", "C:\\bhanu\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		
+		driver.close();
+		}
+	@AfterTest
+	public void dropdown() throws InterruptedException {
+		// TODO Auto-generated method stub
+		WebDriver  driver=new ChromeDriver();
+		driver.close();
+		}
+	@Test
+	public void gmail() throws InterruptedException {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver", "C:\\bhanu\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);      //implicit wait
+		WebDriverWait myWait = new WebDriverWait(driver, 10);  //Explicit wait
+		driver.get("http://demo.guru99.com/selenium/deprecated.html");
+		driver.switchTo().frame("classFrame");
+		driver.findElement(By.linkText("Deprecated")).click();
+		Thread.sleep(5000);
+		driver.navigate().back();
+		driver.switchTo().frame("packageFrame");
+		driver.findElement(By.linkText("AddApplicationCache")).click();
+		Thread.sleep(5000);
+		driver.navigate().back();
+		driver.switchTo().frame("packageListFrame");
+		driver.findElement(By.linkText("com.thoughtworks.selenium")).click();
+		Thread.sleep(5000); 
+		driver.get("http://demo.guru99.com/test/newtours/register.php");
+		Select country = new Select(driver.findElement(By.xpath("//select[@name='country']")));
+		country.selectByValue("HUNGARY");
+		country.selectByValue("FAROE ISLANDS");
+		Thread.sleep(5000);
+		driver.findElement(By.xpath("//a[@class='dropdown-toggle']")).click();
+		driver.manage().timeouts().implicitlyWait(10,  TimeUnit.SECONDS);
+		driver.findElement(By.xpath("//a[contains(text(),'Login')]")).click();
+		driver.navigate().back();
+		Thread.sleep(5000);
+		driver.get("http://jsbin.com/osebed/2");
+		Select fruits = new Select(driver.findElement(By.xpath("//*[@id='fruits']")));
+		fruits.selectByVisibleText("Banana");
+		fruits.selectByVisibleText("Orange");
+		Thread.sleep(5000);
+		driver.get("https://www.gmail.com"); 
+		driver.findElement(By.xpath("//input[@id='identifierId']")).sendKeys("bhanu.velamuri@gmail.com");
+		driver.findElement(By.xpath("//span[@class='RveJvd snByac']")).click();               //Explicit wait
+		myWait.until(ExpectedConditions.visibilityOfElementLocated(By.name("password")));
+		driver.findElement(By.xpath("//input[@name='password']")).sendKeys("Bhanu_8686");
+		driver.findElement(By.xpath("//div[@id='passwordNext']")).click();
+		driver.close();
+
+	}
+}

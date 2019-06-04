@@ -1,0 +1,10 @@
+
+public class MultipleTests {
+
+	@Test
+	public void frames() {}
+	@Test
+	public void frames() {}
+	@Test
+	public void frames() {}
+}

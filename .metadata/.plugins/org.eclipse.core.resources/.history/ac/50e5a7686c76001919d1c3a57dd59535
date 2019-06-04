@@ -1,0 +1,25 @@
+package selenium.basics;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class aLocateUiElements {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.gecko.driver", "C:\\bhanu\\geckodriver.exe");
+		WebDriver driver = new FirefoxDriver();
+		driver.manage().window().maximize();
+		driver.get("https://www.w3schools.com/html/html_attributes.asp");
+		System.out.println("Class Name");
+		List<WebElement> cl = driver.findElements(By.className("left"));
+		for(WebElement we : cl) {
+			System.out.println(we.getTagName());
+		}
+	}
+
+}

@@ -1,0 +1,30 @@
+package selenium.basics;
+
+import java.util.ArrayList;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class DownloadFile {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		System.setProperty("webdriver.chrome.driver", "C:\\bhanu\\chromedriver.exe");
+		WebDriver  driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(20,  TimeUnit.SECONDS);
+		driver.get("http://chromedriver.chromium.org/");
+		driver.findElement(By.xpath("//a[contains(text(),'ChromeDriver 74.0.3729.6')]"));
+		Actions action= new Actions(driver);
+		action.keyDown(Keys.CONTROL).sendKeys(Keys.TAB).build().perform();
+		driver.findElement(By.linkText("chromedriver_linux64.zip"));
+		
+		
+	}
+
+}

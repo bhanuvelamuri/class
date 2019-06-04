@@ -1,0 +1,10 @@
+import org.openqa.selenium.WebDriver;
+
+public class TitleCheck {
+	public WebDriver driver;
+	public String baseUrl = "http://demo.guru99.com/test/";
+	@Test
+	public void titlecheck() {
+		
+	}
+}
