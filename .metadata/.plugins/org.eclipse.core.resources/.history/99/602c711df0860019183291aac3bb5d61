@@ -5,28 +5,23 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import SeleniumConstreants.constrants;
 
 public class basics {
-	public WebDriver driver;
-
 	@BeforeTest
 	public void launcher() {
 		System.setProperty(constrants.chromeKey, constrants.chromeDriverPath);
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-	}
-	@AfterTest
-	public void close() {
-		driver.close();
-	}
 	@Test
 	public void frames() throws InterruptedException {
 		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver", "C:\\bhanu\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
 		driver.get("http://demo.guru99.com/selenium/deprecated.html");
 		driver.switchTo().frame("classFrame");
 		driver.findElement(By.linkText("Deprecated")).click();
@@ -39,10 +34,14 @@ public class basics {
 		driver.switchTo().frame("packageListFrame");
 		driver.findElement(By.linkText("com.thoughtworks.selenium")).click();
 		Thread.sleep(5000); 
+		driver.close();
 		}
 	@Test
 	public void dropdown() throws InterruptedException {
 		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver", "C:\\bhanu\\chromedriver.exe");
+		WebDriver  driver=new ChromeDriver();
+		driver.manage().window().maximize();
 		driver.get("http://demo.guru99.com/test/newtours/register.php");
 		Select country = new Select(driver.findElement(By.xpath("//select[@name='country']")));
 		country.selectByValue("HUNGARY");
@@ -58,5 +57,6 @@ public class basics {
 		fruits.selectByVisibleText("Banana");
 		fruits.selectByVisibleText("Orange");
 		Thread.sleep(5000);
+		driver.close();
 		}
 }
