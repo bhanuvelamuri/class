@@ -3,14 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Selenium.exercise">
+      <class name="Selenium.demoaut">
         <methods>
-          <include name="launcher"/>
-          <include name="titlecheck"/>
+          <include name="closeTest"/>
           <include name="close"/>
-          <include name="vacations"/>
+          <include name="url"/>
+          <include name="closetab"/>
+          <include name="titlecheck"/>
+          <include name="launcher"/>
+          <include name="runningTest"/>
         </methods>
-      </class> <!-- Selenium.exercise -->
+      </class> <!-- Selenium.demoaut -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

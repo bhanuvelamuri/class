@@ -1,5 +1,8 @@
 package Selenium;
 import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.SkipException;
@@ -9,7 +12,7 @@ public class MultipleTests {
 
 	@Test(priority = 0)
 	public void z_test() {
-		AssertJUnit.fail();
+		Assert.fail();
 	}
 	@Test(priority = 2)
 	public void a_test() {

@@ -4,6 +4,10 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 import org.testng.AssertJUnit;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -38,8 +42,6 @@ public class exercise {
 		}
 		@BeforeTest
 		public void launcher() {
-			System.setProperty(constrants.chromeKey, constrants.chromeDriverPath);
-			driver = new ChromeDriver();
 			System.out.println( "opening launcher");
 		}
 		@AfterTest

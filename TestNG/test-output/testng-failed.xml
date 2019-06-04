@@ -1,50 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Selenium.MultipleTests">
+      <class name="Selenium.demoaut">
         <methods>
-          <include name="t_test"/>
-          <include name="z_test"/>
-        </methods>
-      </class> <!-- Selenium.MultipleTests -->
-      <class name="Selenium.otherAnnotations">
-        <methods>
-          <include name="titlecheck"/>
-          <include name="launcher"/>
-          <include name="homePage"/>
-          <include name="close"/>
-        </methods>
-      </class> <!-- Selenium.otherAnnotations -->
-      <class name="Selenium.basics">
-        <methods>
-          <include name="frames"/>
-          <include name="dropdown"/>
-          <include name="close"/>
-          <include name="launcher"/>
-        </methods>
-      </class> <!-- Selenium.basics -->
-      <class name="Selenium.exercise">
-        <methods>
-          <include name="hotel"/>
-          <include name="launcher"/>
-          <include name="titlecheck"/>
-          <include name="homePage"/>
-          <include name="close"/>
-          <include name="titlecheck1"/>
-          <include name="closetab"/>
-          <include name="url"/>
           <include name="closeTest"/>
-          <include name="vacations"/>
+          <include name="close"/>
+          <include name="url"/>
+          <include name="closetab"/>
+          <include name="titlecheck"/>
+          <include name="launcher"/>
           <include name="runningTest"/>
         </methods>
-      </class> <!-- Selenium.exercise -->
-      <class name="Selenium.TitleCheck">
-        <methods>
-          <include name="titlecheck"/>
-        </methods>
-      </class> <!-- Selenium.TitleCheck -->
+      </class> <!-- Selenium.demoaut -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="TestAnnotations">
+    <classes>
+      <class name="Selenium.TestAnnotations"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="MultipleTests">
+    <classes>
+      <class name="Selenium.MultipleTests"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="exercise">
+    <classes>
+      <class name="Selenium.exercise"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

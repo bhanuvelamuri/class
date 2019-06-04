@@ -1,5 +1,8 @@
 package Selenium;
 
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -25,17 +28,17 @@ public class TestAnnotations {
 		String Actualtitle= null;
 		@BeforeSuite
 		public void runningTest() {
+			System.out.println( "opening launcher");
 			System.setProperty(constrants.chromeKey, constrants.chromeDriverPath);
 			driver = new ChromeDriver();
-			System.out.println( "Stating Test");
 		}
 		@AfterSuite
 		public void closeTest() {
 			System.out.println("Test Completed");
 		}
 		@BeforeTest
-		public void launcher() {
-			System.out.println( "opening launcher");
+		public void launcher() {  
+			System.out.println( "Stating Test");
 		}
 		@AfterTest
 		public void close() {
