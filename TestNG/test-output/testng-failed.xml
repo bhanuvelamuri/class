@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Selenium.otherAnnotations">
+      <class name="Selenium.exercise">
         <methods>
-          <include name="titlecheck"/>
           <include name="launcher"/>
+          <include name="titlecheck"/>
           <include name="close"/>
+          <include name="vacations"/>
         </methods>
-      </class> <!-- Selenium.otherAnnotations -->
+      </class> <!-- Selenium.exercise -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

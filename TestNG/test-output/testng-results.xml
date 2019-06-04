@@ -1,29 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10364" started-at="2019-06-04T17:55:03Z" finished-at="2019-06-04T17:55:14Z">
+  <suite name="Default suite" duration-ms="14240" started-at="2019-06-04T18:36:27Z" finished-at="2019-06-04T18:36:42Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="10364" started-at="2019-06-04T17:55:03Z" finished-at="2019-06-04T17:55:14Z">
-      <class name="Selenium.otherAnnotations">
-        <test-method status="PASS" signature="launcher()[pri:0, instance:Selenium.otherAnnotations@a1a8d5]" name="launcher" is-config="true" duration-ms="7014" started-at="2019-06-04T17:55:03Z" finished-at="2019-06-04T17:55:10Z">
+    <test name="Default test" duration-ms="14240" started-at="2019-06-04T18:36:27Z" finished-at="2019-06-04T18:36:42Z">
+      <class name="Selenium.exercise">
+        <test-method status="PASS" signature="launcher()[pri:0, instance:Selenium.exercise@1c7e1bb]" name="launcher" is-config="true" duration-ms="3520" started-at="2019-06-04T18:36:27Z" finished-at="2019-06-04T18:36:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launcher -->
-        <test-method status="PASS" signature="titlecheck()[pri:0, instance:Selenium.otherAnnotations@a1a8d5]" name="titlecheck" duration-ms="20" started-at="2019-06-04T17:55:10Z" finished-at="2019-06-04T17:55:10Z">
+        <test-method status="PASS" signature="url()[pri:0, instance:Selenium.exercise@1c7e1bb]" name="url" is-config="true" duration-ms="3206" started-at="2019-06-04T18:36:31Z" finished-at="2019-06-04T18:36:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- url -->
+        <test-method status="PASS" signature="titlecheck()[pri:0, instance:Selenium.exercise@1c7e1bb]" name="titlecheck" is-config="true" duration-ms="13" started-at="2019-06-04T18:36:34Z" finished-at="2019-06-04T18:36:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- titlecheck -->
-        <test-method status="PASS" signature="homePage()[pri:1, instance:Selenium.otherAnnotations@a1a8d5]" name="homePage" duration-ms="1219" started-at="2019-06-04T17:55:10Z" finished-at="2019-06-04T17:55:12Z">
+        <test-method status="PASS" signature="homePage()[pri:0, instance:Selenium.exercise@1c7e1bb]" name="homePage" duration-ms="968" started-at="2019-06-04T18:36:34Z" finished-at="2019-06-04T18:36:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePage -->
-        <test-method status="PASS" signature="close()[pri:0, instance:Selenium.otherAnnotations@a1a8d5]" name="close" is-config="true" duration-ms="2089" started-at="2019-06-04T17:55:12Z" finished-at="2019-06-04T17:55:14Z">
+        <test-method status="PASS" signature="titlecheck1()[pri:0, instance:Selenium.exercise@1c7e1bb]" name="titlecheck1" is-config="true" duration-ms="918" started-at="2019-06-04T18:36:35Z" finished-at="2019-06-04T18:36:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- titlecheck1 -->
+        <test-method status="PASS" signature="titlecheck()[pri:0, instance:Selenium.exercise@1c7e1bb]" name="titlecheck" is-config="true" duration-ms="8" started-at="2019-06-04T18:36:36Z" finished-at="2019-06-04T18:36:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- titlecheck -->
+        <test-method status="PASS" signature="hotel()[pri:1, instance:Selenium.exercise@1c7e1bb]" name="hotel" duration-ms="961" started-at="2019-06-04T18:36:36Z" finished-at="2019-06-04T18:36:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hotel -->
+        <test-method status="PASS" signature="titlecheck1()[pri:0, instance:Selenium.exercise@1c7e1bb]" name="titlecheck1" is-config="true" duration-ms="854" started-at="2019-06-04T18:36:37Z" finished-at="2019-06-04T18:36:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- titlecheck1 -->
+        <test-method status="PASS" signature="titlecheck()[pri:0, instance:Selenium.exercise@1c7e1bb]" name="titlecheck" is-config="true" duration-ms="12" started-at="2019-06-04T18:36:38Z" finished-at="2019-06-04T18:36:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- titlecheck -->
+        <test-method status="PASS" signature="vacations()[pri:2, instance:Selenium.exercise@1c7e1bb]" name="vacations" duration-ms="885" started-at="2019-06-04T18:36:38Z" finished-at="2019-06-04T18:36:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vacations -->
+        <test-method status="PASS" signature="titlecheck1()[pri:0, instance:Selenium.exercise@1c7e1bb]" name="titlecheck1" is-config="true" duration-ms="812" started-at="2019-06-04T18:36:39Z" finished-at="2019-06-04T18:36:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- titlecheck1 -->
+        <test-method status="PASS" signature="closetab()[pri:0, instance:Selenium.exercise@1c7e1bb]" name="closetab" is-config="true" duration-ms="2055" started-at="2019-06-04T18:36:39Z" finished-at="2019-06-04T18:36:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closetab -->
+        <test-method status="PASS" signature="close()[pri:0, instance:Selenium.exercise@1c7e1bb]" name="close" is-config="true" duration-ms="0" started-at="2019-06-04T18:36:42Z" finished-at="2019-06-04T18:36:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-      </class> <!-- Selenium.otherAnnotations -->
+      </class> <!-- Selenium.exercise -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
