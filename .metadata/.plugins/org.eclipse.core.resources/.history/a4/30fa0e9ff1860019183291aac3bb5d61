@@ -1,6 +1,5 @@
 package Selenium;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
@@ -28,12 +27,16 @@ public class otherAnnotations {
 	@Test(priority = 0)
 	public void titlecheck() {
 		System.out.println(driver.getTitle());
-		String Expectedtitle= "Welcome: Mercury Tours";
+		String Expectedtitle= "Select Date from DatePicker Demo Page";
 		String Actualtitle= driver.getTitle();
 		Assert.assertEquals(Actualtitle, Expectedtitle);
 	}
 	@Test(priority = 1)
-	public void homePage() {
-		driver.findElement(By.xpath("//a[contains(text(),'Home')]")).click();
+	public void titlecheck() {
+		System.out.println(driver.getTitle());
+		String Expectedtitle= "Select Date from DatePicker Demo Page";
+		String Actualtitle= driver.getTitle();
+		Assert.assertEquals(Actualtitle, Expectedtitle);
 	}
 }
+//a[contains(text(),'Home')]

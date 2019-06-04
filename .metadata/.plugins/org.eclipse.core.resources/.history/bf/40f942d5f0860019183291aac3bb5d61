@@ -24,7 +24,7 @@ public class basics {
 	public void close() {
 		driver.close();
 	}
-	@Test(priority = 0)
+	@Test
 	public void frames() throws InterruptedException {
 		// TODO Auto-generated method stub
 		driver.get("http://demo.guru99.com/selenium/deprecated.html");
@@ -40,7 +40,7 @@ public class basics {
 		driver.findElement(By.linkText("com.thoughtworks.selenium")).click();
 		Thread.sleep(5000); 
 		}
-	@Test(priority = 1)
+	@Test
 	public void dropdown() throws InterruptedException {
 		// TODO Auto-generated method stub
 		driver.get("http://demo.guru99.com/test/newtours/register.php");

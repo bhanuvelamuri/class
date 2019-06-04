@@ -1,6 +1,5 @@
 package Selenium;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
@@ -12,7 +11,7 @@ import SeleniumConstreants.constrants;
 
 public class otherAnnotations {
 	public WebDriver driver;
-	public String baseUrl = "http://demo.guru99.com/test/newtours/";
+	public String baseUrl = "http://demo.guru99.com/test/";
 	@BeforeTest
 	public void launcher() {
 		System.setProperty(constrants.chromeKey, constrants.chromeDriverPath);
@@ -25,15 +24,11 @@ public class otherAnnotations {
 	public void close() {
 		driver.close();
 	}
-	@Test(priority = 0)
+	@Test
 	public void titlecheck() {
 		System.out.println(driver.getTitle());
-		String Expectedtitle= "Welcome: Mercury Tours";
+		String Expectedtitle= "Select Date from DatePicker Demo Page";
 		String Actualtitle= driver.getTitle();
 		Assert.assertEquals(Actualtitle, Expectedtitle);
-	}
-	@Test(priority = 1)
-	public void homePage() {
-		driver.findElement(By.xpath("//a[contains(text(),'Home')]")).click();
 	}
 }
