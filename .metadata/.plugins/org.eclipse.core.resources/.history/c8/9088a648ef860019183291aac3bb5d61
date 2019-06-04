@@ -2,7 +2,6 @@ package Selenium;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.SkipException;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -18,6 +17,7 @@ public class TitleCheck {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get(baseUrl);
+		System.out.println(driver.getTitle());
 		
 	}
 	@AfterTest
@@ -26,21 +26,14 @@ public class TitleCheck {
 	}
 	@Test
 	public void titlecheck() {
+		System.setProperty(constrants.chromeKey, constrants.chromeDriverPath);
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get(baseUrl);
 		System.out.println(driver.getTitle());
 		String Expectedtitle= "Select Date from DatePicker Demo Page";
 		String Actualtitle= driver.getTitle();
 		Assert.assertEquals(Actualtitle, Expectedtitle);
-	}
-	@Test(priority = 0)
-	public void z_test() {
-		Assert.fail();
-	}
-	@Test(priority = 2)
-	public void a_test() {
-		Assert.assertTrue(17>14);
-	}
-	@Test(priority = 1)
-	public void t_test() {
-		throw new SkipException("Skip Test T");
+		driver.close();
 	}
 }

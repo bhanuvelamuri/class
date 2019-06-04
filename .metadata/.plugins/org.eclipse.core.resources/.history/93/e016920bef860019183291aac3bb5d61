@@ -18,4 +18,3 @@ public class MultipleTests {
 		throw new SkipException("Skip Test T");
 	}
 }
- 

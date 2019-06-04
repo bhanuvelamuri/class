@@ -3,12 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="MultipleTests">
+      <class name="Selenium.TitleCheck">
         <methods>
           <include name="t_test"/>
+          <include name="close"/>
+          <include name="launcher"/>
           <include name="z_test"/>
         </methods>
-      </class> <!-- MultipleTests -->
+      </class> <!-- Selenium.TitleCheck -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
