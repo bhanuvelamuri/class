@@ -1,4 +1,6 @@
 package Selenium;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
@@ -18,7 +20,7 @@ public class TitleCheck {
 		System.out.println(driver.getTitle());
 		String Expectedtitle= "Select Date from DatePicker Demo Page";
 		String Actualtitle= driver.getTitle();
-		Assert.assertEquals(Actualtitle, Expectedtitle);
+		AssertJUnit.assertEquals(Actualtitle, Expectedtitle);
 		driver.close();
 	}
 }

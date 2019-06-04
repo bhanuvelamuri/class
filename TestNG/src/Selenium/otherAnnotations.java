@@ -1,5 +1,7 @@
 package Selenium;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -30,7 +32,7 @@ public class otherAnnotations {
 		System.out.println(driver.getTitle());
 		String Expectedtitle= "Welcome: Mercury Tours";
 		String Actualtitle= driver.getTitle();
-		Assert.assertEquals(Actualtitle, Expectedtitle);
+		AssertJUnit.assertEquals(Actualtitle, Expectedtitle);
 	}
 	@Test(priority = 1)
 	public void homePage() {
