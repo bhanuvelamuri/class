@@ -62,7 +62,7 @@ public class demoaut {
 		System.out.println( "+---------------------------------------------+");
 		String expetedurl = "http://newtours.demoaut.com/mercuryreservation.php";
 		String actualurl = driver.getCurrentUrl();
-		if(actualurl.contains(expetedurl)) {
+		if(expetedurl.equals(actualurl)) {
 			System.out.println("|        login successfull                |");
 		}
 		else {

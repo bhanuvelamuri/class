@@ -59,16 +59,17 @@ public class demoaut {
 		System.out.println( "+---------------------------------------------+");
 		driver.findElement(By.xpath("//input[@value='Login']")).click();
 		System.out.println("|        clicking on submit                   |");
-		System.out.println( "+---------------------------------------------+");
+		System.out.println( "+----------------------------------------------");
 		String expetedurl = "http://newtours.demoaut.com/mercuryreservation.php";
 		String actualurl = driver.getCurrentUrl();
-		if(actualurl.contains(expetedurl)) {
+		if(expetedurl.equals(actualurl)) {
+			System.out.println( "+----------------------------------------------");
 			System.out.println("|        login successfull                |");
 		}
 		else {
+			System.out.println( "+----------------------------------------------");
 			System.out.println("|        login failed                     |");
 		}
-		System.out.println( "+---------------------------------------------+");
 		System.out.println("|        clicking on submit                   |");
 		System.out.println( "+---------------------------------------------+");
 		

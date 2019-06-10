@@ -36,7 +36,7 @@ public class demoaut {
 		System.out.println( "|        maximizing window                    |");
 		System.out.println( "+---------------------------------------------+");
 		driver.get(baseUrl);
-		System.out.println("|        opening url                          |");
+		System.out.println("|        opening url                           |");
 		System.out.println( "+---------------------------------------------+");
 		
 	}
@@ -52,30 +52,29 @@ public class demoaut {
 		// TODO Auto-generated method stub
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//input[@name='userName']")).sendKeys("mercury");
-		System.out.println("|        Entering Username                    |");
+		System.out.println("|        Entering Username                     |");
 		System.out.println( "+---------------------------------------------+");
 		driver.findElement(By.xpath("//input[@name='password']")).sendKeys("mercury");
-		System.out.println("|        Entering Password                    |");
+		System.out.println("|        Entering Password                     |");
 		System.out.println( "+---------------------------------------------+");
 		driver.findElement(By.xpath("//input[@value='Login']")).click();
-		System.out.println("|        clicking on submit                   |");
-		System.out.println( "+---------------------------------------------+");
+		System.out.println("|        clicking on submit                    |");
+		System.out.println( "+----------------------------------------------");
 		String expetedurl = "http://newtours.demoaut.com/mercuryreservation.php";
 		String actualurl = driver.getCurrentUrl();
-		if(actualurl.contains(expetedurl)) {
-			System.out.println("|        login successfull                |");
+		if(expetedurl.equals(actualurl)) {
+			System.out.println("|        login successfull                 |");
 		}
 		else {
-			System.out.println("|        login failed                     |");
+			System.out.println("|        login failed");
 		}
-		System.out.println( "+---------------------------------------------+");
-		System.out.println("|        clicking on submit                   |");
+		System.out.println("|        clicking on submit                    |");
 		System.out.println( "+---------------------------------------------+");
 		
 	}
 	@AfterClass
 	public void closetab() {
-		System.out.println("|        closing driver                       |");
+		System.out.println("|        closing driver                        |");
 		System.out.println( "+---------------------------------------------+");
 	}
 	

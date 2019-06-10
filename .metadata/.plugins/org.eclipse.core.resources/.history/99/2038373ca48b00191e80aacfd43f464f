@@ -54,7 +54,7 @@ public class demoaut {
 		driver.findElement(By.xpath("//input[@name='userName']")).sendKeys("mercury");
 		System.out.println("|        Entering Username                    |");
 		System.out.println( "+---------------------------------------------+");
-		driver.findElement(By.xpath("//input[@name='password']")).sendKeys("mercury");
+		driver.findElement(By.xpath("//input[@name='password']")).sendKeys("password");
 		System.out.println("|        Entering Password                    |");
 		System.out.println( "+---------------------------------------------+");
 		driver.findElement(By.xpath("//input[@value='Login']")).click();
@@ -62,7 +62,7 @@ public class demoaut {
 		System.out.println( "+---------------------------------------------+");
 		String expetedurl = "http://newtours.demoaut.com/mercuryreservation.php";
 		String actualurl = driver.getCurrentUrl();
-		if(actualurl.contains(expetedurl)) {
+		if(expetedurl.equals(actualurl)) {
 			System.out.println("|        login successfull                |");
 		}
 		else {
