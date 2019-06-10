@@ -9,8 +9,8 @@
           <include name="close"/>
           <include name="url"/>
           <include name="closetab"/>
-          <include name="titlecheck"/>
           <include name="launcher"/>
+          <include name="login"/>
           <include name="runningTest"/>
         </methods>
       </class> <!-- Selenium.demoaut -->

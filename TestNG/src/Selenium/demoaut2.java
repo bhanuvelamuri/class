@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -21,20 +22,18 @@ import org.testng.annotations.Test;
 
 import SeleniumConstreants.constrants;
 
-public class demoaut {
-	public WebDriver driver;
-	public String baseUrl = "http://newtours.demoaut.com";
-	@BeforeSuite
-	public void runningTest() {
+public class demoaut2 {
+	
+	 
+	public static void main(String args[]) throws InterruptedException {
+		WebDriver driver;
+		String baseUrl = "http://newtours.demoaut.com";
 		System.out.println( "+---------------------------------------------+");
 		System.out.println( "|        opening launcher                     |");
 		System.out.println( "+---------------------------------------------+");
-		System.setProperty(constrants.geckoKey, constrants.geckoDriverPath);
-		driver = new FirefoxDriver();
-	}
-	
-	@BeforeTest
-	public void launcher() {  
+		System.setProperty(constrants.internetExplorer, constrants.IEDriverPath);
+		driver = new InternetExplorerDriver();
+ 
 		driver.manage().window().maximize(); 
 		System.out.println( "+---------------------------------------------+");
 		System.out.println( "|        maximizing window                    |");
@@ -43,16 +42,9 @@ public class demoaut {
 		System.out.println("|        opening url                          |");
 		System.out.println( "+---------------------------------------------+");
 		
-	}
+ 
 	
-	@BeforeClass
-	public void url() {
-		System.out.println( "|        Stating Test                         |");
-		System.out.println( "+---------------------------------------------+");
-	}
-	
-	@Test
-	public void login() throws InterruptedException {
+ 
 		// TODO Auto-generated method stub
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//input[@name='userName']")).sendKeys("mercury");
@@ -106,21 +98,11 @@ public class demoaut {
 		Airline.selectByVisibleText("Blue Skies Airlines");
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//input[@name='findFlights']")).click();
-	}
-	@AfterClass
-	public void closetab() {
-		System.out.println("|        closing driver                       |");
-		System.out.println( "+---------------------------------------------+");
-	}
-	
-	@AfterTest
-	public void close() {
+	 
+	 
 		driver.close();
 		System.out.println("|        driver closed");
 		System.out.println( "+----------------------------------------------");
-	}
-	@AfterSuite
-	public void closeTest() {
-		System.out.println("Test Completed");
+	 
 	}
 }

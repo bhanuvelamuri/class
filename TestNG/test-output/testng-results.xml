@@ -2,36 +2,36 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8863" started-at="2019-06-10T17:30:41Z" finished-at="2019-06-10T17:30:50Z">
+  <suite name="Default suite" duration-ms="20387" started-at="2019-06-10T18:14:58Z" finished-at="2019-06-10T18:15:18Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8863" started-at="2019-06-10T17:30:41Z" finished-at="2019-06-10T17:30:50Z">
+    <test name="Default test" duration-ms="20387" started-at="2019-06-10T18:14:58Z" finished-at="2019-06-10T18:15:18Z">
       <class name="Selenium.demoaut">
-        <test-method status="PASS" signature="runningTest()[pri:0, instance:Selenium.demoaut@1c7e1bb]" name="runningTest" is-config="true" duration-ms="3485" started-at="2019-06-10T17:30:38Z" finished-at="2019-06-10T17:30:41Z">
+        <test-method status="PASS" signature="runningTest()[pri:0, instance:Selenium.demoaut@1c7e1bb]" name="runningTest" is-config="true" duration-ms="7067" started-at="2019-06-10T18:14:51Z" finished-at="2019-06-10T18:14:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runningTest -->
-        <test-method status="PASS" signature="launcher()[pri:0, instance:Selenium.demoaut@1c7e1bb]" name="launcher" is-config="true" duration-ms="1926" started-at="2019-06-10T17:30:41Z" finished-at="2019-06-10T17:30:43Z">
+        <test-method status="PASS" signature="launcher()[pri:0, instance:Selenium.demoaut@1c7e1bb]" name="launcher" is-config="true" duration-ms="1298" started-at="2019-06-10T18:14:58Z" finished-at="2019-06-10T18:14:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launcher -->
-        <test-method status="PASS" signature="url()[pri:0, instance:Selenium.demoaut@1c7e1bb]" name="url" is-config="true" duration-ms="0" started-at="2019-06-10T17:30:43Z" finished-at="2019-06-10T17:30:43Z">
+        <test-method status="PASS" signature="url()[pri:0, instance:Selenium.demoaut@1c7e1bb]" name="url" is-config="true" duration-ms="0" started-at="2019-06-10T18:14:59Z" finished-at="2019-06-10T18:14:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- url -->
-        <test-method status="PASS" signature="login()[pri:0, instance:Selenium.demoaut@1c7e1bb]" name="login" duration-ms="6725" started-at="2019-06-10T17:30:43Z" finished-at="2019-06-10T17:30:50Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:Selenium.demoaut@1c7e1bb]" name="login" duration-ms="17579" started-at="2019-06-10T18:14:59Z" finished-at="2019-06-10T18:15:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="closetab()[pri:0, instance:Selenium.demoaut@1c7e1bb]" name="closetab" is-config="true" duration-ms="1" started-at="2019-06-10T17:30:50Z" finished-at="2019-06-10T17:30:50Z">
+        <test-method status="PASS" signature="closetab()[pri:0, instance:Selenium.demoaut@1c7e1bb]" name="closetab" is-config="true" duration-ms="0" started-at="2019-06-10T18:15:17Z" finished-at="2019-06-10T18:15:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closetab -->
-        <test-method status="PASS" signature="close()[pri:0, instance:Selenium.demoaut@1c7e1bb]" name="close" is-config="true" duration-ms="190" started-at="2019-06-10T17:30:50Z" finished-at="2019-06-10T17:30:50Z">
+        <test-method status="PASS" signature="close()[pri:0, instance:Selenium.demoaut@1c7e1bb]" name="close" is-config="true" duration-ms="1489" started-at="2019-06-10T18:15:17Z" finished-at="2019-06-10T18:15:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method status="PASS" signature="closeTest()[pri:0, instance:Selenium.demoaut@1c7e1bb]" name="closeTest" is-config="true" duration-ms="0" started-at="2019-06-10T17:30:50Z" finished-at="2019-06-10T17:30:50Z">
+        <test-method status="PASS" signature="closeTest()[pri:0, instance:Selenium.demoaut@1c7e1bb]" name="closeTest" is-config="true" duration-ms="1" started-at="2019-06-10T18:15:18Z" finished-at="2019-06-10T18:15:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeTest -->
