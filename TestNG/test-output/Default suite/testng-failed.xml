@@ -3,17 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Selenium.demoaut">
+      <class name="Selenium.GmailData">
         <methods>
-          <include name="closeTest"/>
-          <include name="close"/>
-          <include name="url"/>
-          <include name="closetab"/>
-          <include name="launcher"/>
-          <include name="login"/>
-          <include name="runningTest"/>
+          <include name="testData" invocation-numbers="1 2 3"/>
         </methods>
-      </class> <!-- Selenium.demoaut -->
+      </class> <!-- Selenium.GmailData -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

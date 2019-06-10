@@ -29,8 +29,8 @@ public class demoaut {
 		System.out.println( "+---------------------------------------------+");
 		System.out.println( "|        opening launcher                     |");
 		System.out.println( "+---------------------------------------------+");
-		System.setProperty(constrants.geckoKey, constrants.geckoDriverPath);
-		driver = new FirefoxDriver();
+		System.setProperty(constrants.chromeKey, constrants.chromeDriverPath);
+		driver = new ChromeDriver();
 	}
 	
 	@BeforeTest
