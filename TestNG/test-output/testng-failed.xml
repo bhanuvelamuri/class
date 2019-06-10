@@ -5,7 +5,7 @@
     <classes>
       <class name="Selenium.GmailData">
         <methods>
-          <include name="testData" invocation-numbers="1 2 3"/>
+          <include name="testData" invocation-numbers="0 1 2 3"/>
         </methods>
       </class> <!-- Selenium.GmailData -->
     </classes>
