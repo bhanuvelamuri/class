@@ -1,121 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="121375" started-at="2019-06-11T17:28:41Z" finished-at="2019-06-11T17:30:42Z">
+  <suite name="Default suite" duration-ms="24511" started-at="2019-06-11T17:46:21Z" finished-at="2019-06-11T17:46:46Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="121375" started-at="2019-06-11T17:28:41Z" finished-at="2019-06-11T17:30:42Z">
-      <class name="Selenium.GmailData">
-        <test-method status="PASS" signature="testData1(java.lang.String, java.lang.String)[pri:0, instance:Selenium.GmailData@93d195]" name="testData1" duration-ms="18129" started-at="2019-06-11T17:28:41Z" data-provider="Auth" finished-at="2019-06-11T17:28:59Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[bpr1406.v@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[mercury1]]>
-              </value>
-            </param>
-          </params>
+    <test name="Default test" duration-ms="24511" started-at="2019-06-11T17:46:21Z" finished-at="2019-06-11T17:46:46Z">
+      <class name="Selenium.test">
+        <test-method status="PASS" signature="OpenBrowser()[pri:0, instance:Selenium.test@4a52ec]" name="OpenBrowser" duration-ms="5797" started-at="2019-06-11T17:46:21Z" finished-at="2019-06-11T17:46:27Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testData1 -->
-        <test-method status="PASS" signature="testData1(java.lang.String, java.lang.String)[pri:0, instance:Selenium.GmailData@93d195]" name="testData1" duration-ms="12834" started-at="2019-06-11T17:28:59Z" data-provider="Auth" finished-at="2019-06-11T17:29:12Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[bpr1406.bp@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[mercury]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- OpenBrowser -->
+        <test-method status="PASS" signature="login()[pri:0, instance:Selenium.test@4a52ec]" name="login" duration-ms="18037" started-at="2019-06-11T17:46:27Z" depends-on-methods="Selenium.test.OpenBrowser" finished-at="2019-06-11T17:46:45Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testData1 -->
-        <test-method status="PASS" signature="testData1(java.lang.String, java.lang.String)[pri:0, instance:Selenium.GmailData@93d195]" name="testData1" duration-ms="19708" started-at="2019-06-11T17:29:12Z" data-provider="Auth" finished-at="2019-06-11T17:29:31Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[bpr1406.v@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[mercury1]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="TitleCheck()[pri:0, instance:Selenium.test@4a52ec]" name="TitleCheck" duration-ms="26" started-at="2019-06-11T17:46:45Z" depends-on-methods="Selenium.test.login" finished-at="2019-06-11T17:46:45Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testData1 -->
-        <test-method status="PASS" signature="testData1(java.lang.String, java.lang.String)[pri:0, instance:Selenium.GmailData@93d195]" name="testData1" duration-ms="24674" started-at="2019-06-11T17:29:31Z" data-provider="Auth" finished-at="2019-06-11T17:29:56Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[bhanu.velamuri@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[mercury]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- TitleCheck -->
+        <test-method status="PASS" signature="Support()[pri:0, instance:Selenium.test@4a52ec]" name="Support" duration-ms="401" started-at="2019-06-11T17:46:45Z" depends-on-methods="Selenium.test.TitleCheck" finished-at="2019-06-11T17:46:45Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testData1 -->
-        <test-method status="PASS" signature="testData2(java.lang.String)[pri:0, instance:Selenium.GmailData@93d195]" name="testData2" duration-ms="17464" started-at="2019-06-11T17:29:56Z" data-provider="webapp" finished-at="2019-06-11T17:30:14Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://exciteservices.net]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- Support -->
+        <test-method status="PASS" signature="SourceCode()[pri:0, instance:Selenium.test@4a52ec]" name="SourceCode" duration-ms="205" started-at="2019-06-11T17:46:45Z" depends-on-methods="Selenium.test.Support" finished-at="2019-06-11T17:46:46Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testData2 -->
-        <test-method status="PASS" signature="testData2(java.lang.String)[pri:0, instance:Selenium.GmailData@93d195]" name="testData2" duration-ms="8983" started-at="2019-06-11T17:30:14Z" data-provider="webapp" finished-at="2019-06-11T17:30:23Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://linkedin.com]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- SourceCode -->
+        <test-method status="PASS" signature="Printing()[pri:0, instance:Selenium.test@4a52ec]" name="Printing" duration-ms="1" started-at="2019-06-11T17:46:46Z" depends-on-methods="Selenium.test.SourceCode" finished-at="2019-06-11T17:46:46Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testData2 -->
-        <test-method status="PASS" signature="testData2(java.lang.String)[pri:0, instance:Selenium.GmailData@93d195]" name="testData2" duration-ms="9847" started-at="2019-06-11T17:30:23Z" data-provider="webapp" finished-at="2019-06-11T17:30:32Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://github.com]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testData2 -->
-        <test-method status="PASS" signature="testData2(java.lang.String)[pri:0, instance:Selenium.GmailData@93d195]" name="testData2" duration-ms="9690" started-at="2019-06-11T17:30:32Z" data-provider="webapp" finished-at="2019-06-11T17:30:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://gmail.com]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testData2 -->
-      </class> <!-- Selenium.GmailData -->
+        </test-method> <!-- Printing -->
+      </class> <!-- Selenium.test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
