@@ -36,7 +36,7 @@ public class test {
 		driver.navigate().back();
 	}
 
-	@Test
+	@Test(groups = "login")
 	public void OpenBrowser() {
 		System.setProperty(constrants.chromeKey, constrants.chromeDriverPath);
 		driver = new ChromeDriver();
