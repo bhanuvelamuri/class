@@ -2,6 +2,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
  <groups>
+ <group>
+ 
+ </group>
   <run>		
     <include name="titlecheck" />		
     <exclude name="login"></exclude>
