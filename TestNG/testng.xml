@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test name="TestAnnotations">
+  <test thread-count="5" name="basics">
     <classes>
-      <class name="Selenium.TestAnnotations"/>
-    </classes>
-  </test> <!-- Test -->
-  <test name="otherAnnotations">
-    <classes>
-      <class name="Selenium.otherAnnotations"/>
-    </classes>
-  </test> <!-- Test -->
-  <test name="exercise">
-    <classes>
-      <class name="Selenium.exercise"/>
+      <class name="Selenium.basics"/></classes></test>
+     <test thread-count="5" name="demoaut"><classes> <class name="Selenium.demoaut"/></classes></test>
+      <test thread-count="5" name="Test"><classes><class name="Selenium.test"/></classes></test>
+      <test thread-count="5" name="TestAnnotations"><classes><class name="Selenium.TestAnnotations"/></classes></test>
+      <test thread-count="5" name="exercise"><classes><class name="Selenium.exercise"/></classes></test>
+     <test thread-count="5" name="GmailData"> <classes><class name="Selenium.GmailData"/></classes></test>
+     <test thread-count="5" name="DataProviders"> <classes><class name="Selenium.DataProviders"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
-
