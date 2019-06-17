@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="6" total="7" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="9615" started-at="2019-06-11T20:30:21Z" finished-at="2019-06-11T20:30:30Z">
+  <suite name="Suite" duration-ms="8739" started-at="2019-06-17T18:22:47Z" finished-at="2019-06-17T18:22:56Z">
     <groups>
-      <group name="titlecheck">
-        <method signature="grouping.titlecheck()[pri:0, instance:Selenium.grouping@77ab81]" name="titlecheck" class="Selenium.grouping"/>
-      </group> <!-- titlecheck -->
     </groups>
-    <test name="demoaut" duration-ms="9500" started-at="2019-06-11T20:30:21Z" finished-at="2019-06-11T20:30:30Z">
-      <class name="Selenium.grouping">
-        <test-method status="PASS" signature="titlecheck()[pri:0, instance:Selenium.grouping@77ab81]" name="titlecheck" duration-ms="9473" started-at="2019-06-11T20:30:21Z" finished-at="2019-06-11T20:30:30Z">
+    <test name="demoaut" duration-ms="8739" started-at="2019-06-17T18:22:47Z" finished-at="2019-06-17T18:22:56Z">
+      <class name="Selenium.parameter">
+        <test-method status="PASS" signature="Login(java.lang.String, java.lang.String)[pri:0, instance:Selenium.parameter@17e1b0c]" name="Login" duration-ms="8706" started-at="2019-06-17T18:22:47Z" finished-at="2019-06-17T18:22:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testuser_1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test@123]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- titlecheck -->
-      </class> <!-- Selenium.grouping -->
+        </test-method> <!-- Login -->
+      </class> <!-- Selenium.parameter -->
     </test> <!-- demoaut -->
-    <test name="Test" duration-ms="6" started-at="2019-06-11T20:30:30Z" finished-at="2019-06-11T20:30:30Z">
-    </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
