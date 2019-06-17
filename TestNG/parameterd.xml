@@ -2,8 +2,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
    <test name="demoaut">
-	<parameter name=  "sUsername" value="testuser_1"></parameter>
-	<parameter name=  "sPassword" value="Test@123"></parameter>
+	<parameter name=  "sUsername" value="TestUser"></parameter>
+	<parameter name=  "sPassword" value="Test@1234"></parameter>
+	<parameter name=  "sUser" value="mercury"></parameter>
+	<parameter name=  "sPass" value="mercury"></parameter>
 	<classes>
      	<class name="Selenium.parameter"/>
      	<class name="Selenium.parameter32"/>

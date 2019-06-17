@@ -22,7 +22,7 @@ public class parameter {
 		email.sendKeys(sUsername);
 		
 		WebElement pass = driver.findElement(By.xpath("//input[@id='passwd']"));
-		pass.sendKeys(sUsername);
+		pass.sendKeys(sPassword);
 		
 		WebElement button = driver.findElement(By.xpath("//button[@id='SubmitLogin']"));
 		button.click();
