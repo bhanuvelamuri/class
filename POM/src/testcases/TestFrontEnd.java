@@ -25,7 +25,7 @@ public class TestFrontEnd  {
 	}
 	@Test
 	public void login() {
-		driver.get("https://www.phptravels.net/admin-portal/admin");
+		driver.get("");
 		frontLogin = new FrontEndLogin(driver);
 		boolean loginstatus;
 		loginstatus = frontLogin.loginFrontEnd("admin@phptravels.com","demoadmin");

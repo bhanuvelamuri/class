@@ -28,7 +28,6 @@ public class demoaut {
 	public void runningTest() {
 		System.out.println( "+---------------------------------------------+");
 		System.out.println( "|        opening launcher                     |");
-		System.out.println( "+---------------------------------------------+");
 		System.setProperty(constrants.chromeKey, constrants.chromeDriverPath);
 		driver = new ChromeDriver();
 	}

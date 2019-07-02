@@ -2,20 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12085" started-at="2019-06-17T21:23:28Z" finished-at="2019-06-17T21:23:40Z">
+  <suite name="Default suite" duration-ms="33882" started-at="2019-07-02T19:04:24Z" finished-at="2019-07-02T19:04:58Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12085" started-at="2019-06-17T21:23:28Z" finished-at="2019-06-17T21:23:40Z">
-      <class name="testcases.TestFrontEnd">
-        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.TestFrontEnd@181e022]" name="setup" is-config="true" duration-ms="5012" started-at="2019-06-17T21:23:28Z" finished-at="2019-06-17T21:23:33Z">
+    <test name="Default test" duration-ms="33882" started-at="2019-07-02T19:04:24Z" finished-at="2019-07-02T19:04:58Z">
+      <class name="testcases.TestPaymentOrder">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.TestPaymentOrder@1f57539]" name="setup" is-config="true" duration-ms="6483" started-at="2019-07-02T19:04:24Z" finished-at="2019-07-02T19:04:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="login()[pri:0, instance:testcases.TestFrontEnd@181e022]" name="login" duration-ms="7043" started-at="2019-06-17T21:23:33Z" finished-at="2019-06-17T21:23:40Z">
+        <test-method status="PASS" signature="adding()[pri:0, instance:testcases.TestPaymentOrder@1f57539]" name="adding" duration-ms="24994" started-at="2019-07-02T19:04:31Z" finished-at="2019-07-02T19:04:56Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-      </class> <!-- testcases.TestFrontEnd -->
+        </test-method> <!-- adding -->
+        <test-method status="PASS" signature="close()[pri:0, instance:testcases.TestPaymentOrder@1f57539]" name="close" is-config="true" duration-ms="2314" started-at="2019-07-02T19:04:56Z" finished-at="2019-07-02T19:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- testcases.TestPaymentOrder -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

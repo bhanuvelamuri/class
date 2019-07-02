@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="demoaut(failed)">
-    <parameter name="browser" value="ie"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Selenium.multibrowser">
+      <class name="Selenium.w3schools">
         <methods>
-          <include name="GoogleTest"/>
+          <include name="testend"/>
+          <include name="url"/>
+          <include name="closetab"/>
+          <include name="homePage"/>
+          <include name="launcher"/>
+          <include name="close"/>
+          <include name="teststart"/>
+          <include name="closeTest"/>
+          <include name="runningTest"/>
         </methods>
-      </class> <!-- Selenium.multibrowser -->
+      </class> <!-- Selenium.w3schools -->
     </classes>
-  </test> <!-- demoaut(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -1,47 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="20512" started-at="2019-06-17T20:12:10Z" finished-at="2019-06-17T20:12:30Z">
+  <suite name="Default suite" duration-ms="62619" started-at="2019-07-02T20:21:18Z" finished-at="2019-07-02T20:22:20Z">
     <groups>
     </groups>
-    <test name="demoaut" duration-ms="10376" started-at="2019-06-17T20:12:10Z" finished-at="2019-06-17T20:12:20Z">
-      <class name="Selenium.multibrowser">
-        <test-method status="PASS" signature="BeforeTest(java.lang.String)[pri:0, instance:Selenium.multibrowser@17e1b0c]" name="BeforeTest" duration-ms="6171" started-at="2019-06-17T20:12:10Z" finished-at="2019-06-17T20:12:16Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+    <test name="Default test" duration-ms="62619" started-at="2019-07-02T20:21:18Z" finished-at="2019-07-02T20:22:20Z">
+      <class name="Selenium.w3schools">
+        <test-method status="PASS" signature="runningTest()[pri:0, instance:Selenium.w3schools@cd072c]" name="runningTest" is-config="true" duration-ms="5735" started-at="2019-07-02T20:21:12Z" finished-at="2019-07-02T20:21:18Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BeforeTest -->
-        <test-method status="PASS" signature="GoogleTest()[pri:0, instance:Selenium.multibrowser@17e1b0c]" name="GoogleTest" duration-ms="4174" started-at="2019-06-17T20:12:16Z" finished-at="2019-06-17T20:12:20Z">
+        </test-method> <!-- runningTest -->
+        <test-method status="PASS" signature="launcher()[pri:0, instance:Selenium.w3schools@cd072c]" name="launcher" is-config="true" duration-ms="1" started-at="2019-07-02T20:21:18Z" finished-at="2019-07-02T20:21:18Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- GoogleTest -->
-      </class> <!-- Selenium.multibrowser -->
-    </test> <!-- demoaut -->
-    <test name="demoaut1" duration-ms="10075" started-at="2019-06-17T20:12:20Z" finished-at="2019-06-17T20:12:30Z">
-      <class name="Selenium.multibrowser">
-        <test-method status="PASS" signature="BeforeTest(java.lang.String)[pri:0, instance:Selenium.multibrowser@31330c]" name="BeforeTest" duration-ms="7657" started-at="2019-06-17T20:12:20Z" finished-at="2019-06-17T20:12:28Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- launcher -->
+        <test-method status="PASS" signature="url()[pri:0, instance:Selenium.w3schools@cd072c]" name="url" is-config="true" duration-ms="4748" started-at="2019-07-02T20:21:18Z" finished-at="2019-07-02T20:21:22Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BeforeTest -->
-        <test-method status="PASS" signature="GoogleTest()[pri:0, instance:Selenium.multibrowser@31330c]" name="GoogleTest" duration-ms="2413" started-at="2019-06-17T20:12:28Z" finished-at="2019-06-17T20:12:30Z">
+        </test-method> <!-- url -->
+        <test-method status="PASS" signature="teststart()[pri:0, instance:Selenium.w3schools@cd072c]" name="teststart" is-config="true" duration-ms="1954" started-at="2019-07-02T20:21:22Z" finished-at="2019-07-02T20:21:24Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- GoogleTest -->
-      </class> <!-- Selenium.multibrowser -->
-    </test> <!-- demoaut1 -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- teststart -->
+        <test-method status="PASS" signature="homePage()[pri:0, instance:Selenium.w3schools@cd072c]" name="homePage" duration-ms="54302" started-at="2019-07-02T20:21:24Z" finished-at="2019-07-02T20:22:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePage -->
+        <test-method status="PASS" signature="testend()[pri:0, instance:Selenium.w3schools@cd072c]" name="testend" is-config="true" duration-ms="0" started-at="2019-07-02T20:22:19Z" finished-at="2019-07-02T20:22:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testend -->
+        <test-method status="PASS" signature="closetab()[pri:0, instance:Selenium.w3schools@cd072c]" name="closetab" is-config="true" duration-ms="165" started-at="2019-07-02T20:22:19Z" finished-at="2019-07-02T20:22:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closetab -->
+        <test-method status="PASS" signature="close()[pri:0, instance:Selenium.w3schools@cd072c]" name="close" is-config="true" duration-ms="1426" started-at="2019-07-02T20:22:19Z" finished-at="2019-07-02T20:22:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method status="PASS" signature="closeTest()[pri:0, instance:Selenium.w3schools@cd072c]" name="closeTest" is-config="true" duration-ms="1" started-at="2019-07-02T20:22:20Z" finished-at="2019-07-02T20:22:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeTest -->
+      </class> <!-- Selenium.w3schools -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

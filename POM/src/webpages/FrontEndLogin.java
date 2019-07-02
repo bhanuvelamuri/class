@@ -23,6 +23,7 @@ public class FrontEndLogin {
 			driver.findElement(remember).click();
 			driver.findElement(click).click();
 			String expectedUrlUrl = "https://www.phptravels.net/admin-portal/";
+			driver.manage().window().maximize(); 
 			String currentUrl = driver.getCurrentUrl();
 			if(driver.getCurrentUrl().contains(expectedUrlUrl)) 
 				return true;
