@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="TestNG.Listner.TestNgListner"/>
+  </listeners>
+  <test thread-count="5" name="sel-test-listner(failed)">
     <classes>
-      <class name="Selenium.w3schools">
+      <class name="TestNG.Listner.TestClass">
         <methods>
-          <include name="testend"/>
-          <include name="url"/>
-          <include name="closetab"/>
-          <include name="homePage"/>
-          <include name="launcher"/>
-          <include name="close"/>
-          <include name="teststart"/>
-          <include name="closeTest"/>
-          <include name="runningTest"/>
+          <include name="TestFail"/>
+          <include name="testClassEnd"/>
+          <include name="testClassBegin"/>
         </methods>
-      </class> <!-- Selenium.w3schools -->
+      </class> <!-- TestNG.Listner.TestClass -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- sel-test-listner(failed) -->
+</suite> <!-- Failed suite [Suite] -->

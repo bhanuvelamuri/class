@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="demoaut(failed)">
-    <parameter name="browser" value="ie"/>
+  <listeners>
+    <listener class-name="TestNG.Listner.TestNgListner"/>
+  </listeners>
+  <test thread-count="5" name="sel-test-listner(failed)">
     <classes>
-      <class name="Selenium.multibrowser">
+      <class name="TestNG.Listner.TestClass">
         <methods>
-          <include name="GoogleTest"/>
+          <include name="TestFail"/>
+          <include name="testClassEnd"/>
+          <include name="testClassBegin"/>
         </methods>
-      </class> <!-- Selenium.multibrowser -->
+      </class> <!-- TestNG.Listner.TestClass -->
     </classes>
-  </test> <!-- demoaut(failed) -->
+  </test> <!-- sel-test-listner(failed) -->
 </suite> <!-- Failed suite [Suite] -->

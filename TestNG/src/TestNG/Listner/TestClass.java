@@ -2,9 +2,11 @@ package TestNG.Listner;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
 
 import SeleniumConstreants.constrants;
 
@@ -25,7 +27,16 @@ public class TestClass {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		String baseUrl = "http://www.scribd.com/";
-		String Expectedtitle= null;
-		String Actualtitle= null;
+		String Expectedtitle= "Scribd - Read books, audiobooks, and more";
+		String Actualtitle= "";
+		driver.get(baseUrl);
+		Actualtitle = driver.getTitle();
+		driver.close();
+		Assert.assertEquals(Actualtitle, Expectedtitle);
+	}
+	@Test
+	public void TestFail() {
+		System.out.println("Method on test failure");
+		Assert.assertTrue(false);
 	}
 }
